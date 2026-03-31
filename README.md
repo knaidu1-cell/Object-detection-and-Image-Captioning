@@ -1,14 +1,19 @@
 # Object-detection-and-Image-Captioning
 This repository contains a Jupyter notebook demonstrating object detection using PyTorch's Faster R-CNN/Mask R-CNN models and image captioning using the nlpconnect/vit-gpt2-image-captioning model from Hugging Face Transformers.
 
-Features
-Object detection on images from the Open Images dataset
+Tech Stack
+Object Detection: torchvision.models.detection.fasterrcnn_resnet50_fpn (pretrained)
 
-Bounding box visualization with confidence filtering (>0.6)
+Image Captioning: nlpconnect/vit-gpt2-image-captioning
 
-Automatic image caption generation with ViT-GPT2
+Visualization: Matplotlib with bounding box overlays
 
-Google Colab-ready with GPU support
+Dataset: Open Images V4 (train split)
+
+| Task       | Model                     | Framework    | Confidence            |
+| ---------- | ------------------------- | ------------ | --------------------- |
+| Detection  | Faster R-CNN ResNet50-FPN | TorchVision  | >0.6                  |
+| Captioning | ViT-GPT2                  | Transformers | Beam search (4 beams) |
 
 
 <img width="917" height="639" alt="image" src="https://github.com/user-attachments/assets/ed389827-9ba1-46a4-8501-dd64842c6880" />
